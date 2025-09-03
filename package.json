@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "mc-scripts build",
-    "postbuild": "echo '/* /index.html 200' > dist/_redirects",
+    "postbuild": "echo '/* /index.html 200' > public/_redirects",
     "start": "mc-scripts start",
     "compile-html": "mc-scripts compile-html",
     "compile-html:local": "MC_APP_ENV=development mc-scripts compile-html --transformer @commercetools-frontend/mc-dev-authentication/transformer-local.js",
