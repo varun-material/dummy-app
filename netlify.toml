@@ -1,11 +1,11 @@
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
 [build]
-  command = "npm run build --legacy-peer-deps"
+  command = "npm install --legacy-peer-deps && npm run build"
   publish = "public"
 
 [build.environment]
   NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
